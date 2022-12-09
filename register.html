@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/43ff5cbbab.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link Css -->
+    <link rel="stylesheet" href="./css/register.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <section id="signUp">
+      <!-- The image -->
+      <div class="image">
+        <img src="./images/necklace2.png" alt="necklace " />
+      </div>
+
+      <!-- Sign Up Form -->
+      <form class="register" id="register">
+        <legend>Create Account</legend>
+        <p>Go ahead and sign up, let everyone know how awesome you are!</p>
+        <div class="username">
+          <label for="username"><i class="fa-regular fa-user"></i></label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+          />
+          <div class="usernameErr" data-error="username">
+            It must have between 5 and 15 characters, only numbers or letters,
+            and no numbers at the beginning or end
+          </div>
+        </div>
+        <div class="email">
+          <label for="email"><i class="fa-regular fa-envelope"></i></label>
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <div class="emailErr" data-error="email">
+            Invalid Email, Please make sure to use the right email...
+          </div>
+        </div>
+        <div class="pass">
+          <label for="password"><i class="fa-solid fa-lock"></i></label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <div class="passErr" data-error="password">
+            Password must be at least 8 characters, and at least one uppercase,
+            lowercase, number and sympol...
+          </div>
+        </div>
+        <div class="confirm">
+          <label for="confirm"><i class="fa-solid fa-lock"></i></label>
+          <input
+            type="password"
+            name="confirm"
+            id="confirm"
+            placeholder="Confirm Password"
+          />
+          <div class="conErr">Mismatched Password..</div>
+        </div>
+
+        <input type="submit" value="Create Account" class="start-btn" />
+        <div class="error">
+          Please fill the boxes first then click on the button
+        </div>
+      </form>
+    </section>
+
+    <!-- Link Js File -->
+    <script src="./js/register.js"></script>
+  </body>
+</html>

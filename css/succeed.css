@@ -1,0 +1,102 @@
+/* Start Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../images/gradientbackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* End Global Rules */
+
+#succeed {
+  height: 576px;
+  width: 1080px;
+  border-radius: 10px;
+  padding: 60px;
+  background: rgba(245, 247, 255, 0.85);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (width <= 767px) {
+  body {
+    background: rgba(245, 247, 255, 0.85);
+  }
+
+  #succeed {
+    width: 375px;
+    flex-direction: column;
+    gap: 80px;
+    border-radius: 10px;
+    padding: 40px 0px;
+    background: rgba(245, 247, 255, 0.85);
+  }
+}
+
+#succeed .image {
+  margin-right: 90px;
+  border-radius: 10px;
+}
+
+#succeed .image img {
+  border-radius: 10px;
+}
+
+@media (width <= 767px) {
+  #succeed .image {
+    margin-right: 0;
+  }
+}
+
+#succeed .success {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#succeed .success h2 {
+  color: rgba(45, 45, 45, 1);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#succeed .success h3 {
+  color: rgba(31, 18, 73, 1);
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media (width <= 767px) {
+  #succeed .success h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  #succeed .success h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}

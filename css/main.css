@@ -1,0 +1,149 @@
+/* Start Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../images/gradientbackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* End Global Rules */
+
+/* TODO: Styling the main content */
+#start {
+  background: rgba(245, 247, 255, 0.85);
+  height: 435px;
+  width: 1080px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 60px;
+  border-radius: 10px;
+}
+
+/* For Mobile Devices */
+@media (width <= 767px) {
+  body {
+    background: rgba(245, 247, 255, 0.85);
+  }
+
+  #start {
+    width: 375px;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 40px 0px;
+    background: rgba(245, 247, 255, 0.85);
+  }
+}
+
+/* Start Styling Image */
+#start .image {
+  border-radius: 10px;
+}
+
+#start .image img {
+  border-radius: 10px;
+}
+
+@media (width <= 767px) {
+  #start .image {
+    height: 330px;
+    width: 325px;
+    border-radius: 10px;
+  }
+
+  #start .image img {
+    height: 350px;
+    width: 100%;
+  }
+}
+
+/* End Styling Image */
+
+#start .welcome {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  gap: 30px;
+}
+
+@media (width <= 767px) {
+  #start .welcome {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#start .welcome h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 67px;
+  letter-spacing: 0em;
+  color: #2d2d2d;
+}
+
+@media (width <= 767px) {
+  #start .welcome h1 {
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+  }
+}
+
+#start .welcome p {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 38px;
+  color: rgba(31, 18, 73, 1);
+}
+
+@media (width <= 767px) {
+  #start .welcome p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+  }
+}
+
+#start .welcome .start-btn {
+  cursor: pointer;
+  height: 60px;
+  width: 450px;
+  border: 0;
+  border-radius: 10px;
+  background: linear-gradient(113.87deg, #2663df 14.81%, #758ff0 88.76%);
+  box-shadow: 0px 6px 18px 0px rgba(156, 173, 242, 1);
+  color: #fff;
+  transition: 300ms ease;
+}
+
+@media (width <=767px) {
+  #start .welcome .start-btn {
+    height: 60px;
+    width: 315px;
+    border-radius: 10px;
+    padding: 0px 50px 0px 50px;
+  }
+}
+
+#start .welcome .start-btn:focus {
+  outline: none;
+}
+
+#start .welcome .start-btn:active {
+  transform: scale(0.95);
+}

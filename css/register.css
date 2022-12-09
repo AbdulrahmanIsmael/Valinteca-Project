@@ -1,0 +1,245 @@
+/* Start Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../images/gradientbackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* End Global Rules */
+
+#signUp {
+  background: rgba(245, 247, 255, 0.85);
+  height: 656px;
+  width: 1080px;
+  border-radius: 10px;
+  padding: 60px;
+  gap: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (width <= 767px) {
+  body {
+    background: rgba(245, 247, 255, 0.85);
+  }
+
+  #signUp {
+    height: 1031px;
+    width: 375px;
+    flex-direction: column;
+    padding-top: 200px;
+    gap: 30px;
+    background: rgba(245, 247, 255, 0.85);
+  }
+}
+
+#signUp .image {
+  border-radius: 10px;
+}
+
+#signUp .image img {
+  border-radius: 10px;
+}
+
+@media (width <= 767px) {
+  #signUp .image {
+    height: 315px;
+    width: 315px;
+    border-radius: 10px;
+  }
+
+  #signUp .image img {
+    width: 100%;
+  }
+}
+
+#signUp .register {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  gap: 15px;
+}
+
+@media (width <= 767px) {
+  #signUp .register {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#signUp .register legend {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 67px;
+  letter-spacing: 0em;
+  color: #2d2d2d;
+}
+
+@media (width <= 767px) {
+  #signUp .register legend {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
+
+#signUp .register p {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 38px;
+  color: rgba(31, 18, 73, 1);
+}
+
+@media (width <= 767px) {
+  #signUp .register p {
+    font-size: 16px;
+    width: 70%;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
+
+#signUp .register div {
+  position: relative;
+}
+
+@media (width <= 767px) {
+  #signUp .register div {
+    height: 60px;
+    width: 315px;
+    border-radius: 10px;
+    padding: 8px 0px;
+  }
+}
+
+#signUp .register div input {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  padding: 5px 40px;
+  border: 1px solid rgba(219, 227, 255, 1);
+}
+
+@media (width <= 767px) {
+  #signUp .register div input {
+    width: 315px;
+  }
+}
+
+#signUp .register div input:focus {
+  outline: none;
+}
+
+#signUp .register div input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+
+#signUp .register div label {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  padding-right: 10px;
+  color: rgba(156, 173, 242, 1);
+  border-right: 1px solid rgba(156, 173, 242, 1);
+}
+
+@media (width <= 767px) {
+  #signUp .register div label {
+    top: 28px;
+    left: 8px;
+  }
+}
+
+#signUp .register .start-btn {
+  cursor: pointer;
+  height: 60px;
+  width: 450px;
+  border: 0;
+  border-radius: 10px;
+  background: linear-gradient(113.87deg, #2663df 14.81%, #758ff0 88.76%);
+  box-shadow: 0px 6px 18px 0px rgba(156, 173, 242, 1);
+  color: #fff;
+  transition: 300ms ease;
+}
+
+@media (width <=767px) {
+  #signUp .register .start-btn {
+    height: 60px;
+    width: 315px;
+    border-radius: 10px;
+    padding: 0px 50px 0px 50px;
+  }
+}
+
+#signUp .register .start-btn:focus {
+  outline: none;
+}
+
+#signUp .register .start-btn:active {
+  transform: scale(0.95);
+}
+
+.error {
+  display: none;
+  color: #fff;
+  background-color: rgb(255, 0, 0);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Style Error messages */
+.usernameErr {
+  display: none;
+  margin-top: 5px;
+  color: #fff;
+  background-color: rgb(255, 0, 0);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.emailErr {
+  display: none;
+  margin-top: 5px;
+  color: #fff;
+  background-color: rgb(255, 0, 0);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.passErr {
+  display: none;
+  margin-top: 5px;
+  color: #fff;
+  background-color: rgb(255, 0, 0);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.conErr {
+  display: none;
+  margin-top: 5px;
+  color: #fff;
+  background-color: rgb(255, 0, 0);
+  padding: 10px;
+  border-radius: 5px;
+}
